@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:backgroundTint="#030A6D"
-                android:text="Search clinic"
+                android:text="Search clinic within the city"
                 app:cornerRadius="20dp" />
 
             <Button
