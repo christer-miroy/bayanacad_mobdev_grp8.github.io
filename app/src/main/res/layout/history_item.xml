@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="20dp"
+
+        style="@style/HistoryCardViewBorder">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="september 2 | 08:00 AM - 12:00 PM"
+                android:textColor="#030A6D"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/history_image"
+                    android:layout_width=".0dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/doctors"
+                    android:padding="5dp"
+                    android:layout_weight=".3"
+
+                    style="@style/HistoryCardViewBorder"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight=".6"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_specialist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Specialist in Cardiology"
+                        android:textColor="@color/custom_blue_700"
+                        android:textStyle="bold"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_spec_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Lorem ipsum dolor sit amet, elitr electram usu in, rebum mollis ut sea. Sed eu salutatus maiestatis, sed an utamur aperiam mnesarchum. Ius ex inermis dolorem invidunt. Sea meliore deleniti ei."
+                        android:textSize="10dp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Details"
+                        android:layout_margin="3dp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight=".1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/baseline_mode_edit_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="8dp"/>
+
+                    <ImageView
+                        android:src="@drawable/baseline_delete_24"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="8dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+</LinearLayout>
